@@ -1,0 +1,50 @@
+.appleImg1 {
+  width: 4%;
+  position: absolute;
+  left: 18rem;
+  top: 8rem;
+}
+
+.appleImg2 {
+  width: 4%;
+  position: absolute;
+  left: 26rem;
+  top: 11rem;
+}
+
+.appleImg3 {
+  width: 4%;
+  position: absolute;
+  left: 9rem;
+  padding-right: 30rem;
+  top: 14rem;
+}
+
+.appleImg4 {
+  width: 4%;
+  position: absolute;
+  left: 12rem;
+  padding-right: 40rem;
+  top: 17rem;
+}
+
+.appleImg5 {
+  width: 4%;
+  position: absolute;
+  left: 15rem;
+  padding-right: 50rem;
+  top: 20rem;
+}
+
+.appleImg6 {
+  width: 4%;
+  position: absolute;
+  left: 18rem;
+  padding-right: 60rem;
+  top: 23rem;
+}
+
+.containerApple {
+  margin: 1%;
+}
+/*# sourceMappingURL=Apple.css.map */

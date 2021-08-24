@@ -1,0 +1,20 @@
+$applePositionsH: 1,2
+$applePositionsV: 3,4,5,6
+@each $positionH in $applePositionsH
+    .appleImg#{$positionH}
+        width: 4%
+        position: absolute
+        left: 10 + (8*$positionH) + rem
+        top: 5 + (3*$positionH) + rem
+
+@each $positionV in $applePositionsV
+    .appleImg#{$positionV}
+        width: 4%
+        position: absolute
+        left: (3*$positionV) + rem
+        padding-right: (10*$positionV) + rem
+        top: 5 + (3*$positionV) + rem
+
+.containerApple
+    margin: 1%
+    
