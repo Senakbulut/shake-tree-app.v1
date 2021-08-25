@@ -1,50 +1,43 @@
-.appleImg1 {
-  width: 4%;
+.AppleCommonP, .ImgWrapper4, .ImgWrapper5, .ImgWrapper6, .ImgWrapper3 {
+  width: 3%;
   position: absolute;
-  left: 18rem;
-  top: 8rem;
+  top: 25%;
+}
+
+.appleImg1 {
+  width: 3%;
+  position: absolute;
+  left: 18%;
+  top: 13%;
 }
 
 .appleImg2 {
-  width: 4%;
+  width: 3%;
   position: absolute;
-  left: 26rem;
-  top: 11rem;
+  left: 26%;
+  top: 16%;
 }
 
-.appleImg3 {
-  width: 4%;
-  position: absolute;
-  left: 9rem;
-  padding-right: 30rem;
-  top: 14rem;
+.ImgWrapper4 {
+  left: 12%;
+  margin-left: 7%;
 }
 
-.appleImg4 {
-  width: 4%;
-  position: absolute;
-  left: 12rem;
-  padding-right: 40rem;
-  top: 17rem;
+.ImgWrapper5 {
+  left: 15%;
+  margin-left: 8%;
 }
 
-.appleImg5 {
-  width: 4%;
-  position: absolute;
-  left: 15rem;
-  padding-right: 50rem;
-  top: 20rem;
+.ImgWrapper6 {
+  left: 18%;
+  margin-left: 9%;
 }
 
-.appleImg6 {
-  width: 4%;
-  position: absolute;
-  left: 18rem;
-  padding-right: 60rem;
-  top: 23rem;
+.ImgWrapper3 {
+  margin-left: 5%;
 }
 
 .containerApple {
-  margin: 1%;
+  margin: 5%;
 }
 /*# sourceMappingURL=Apple.css.map */

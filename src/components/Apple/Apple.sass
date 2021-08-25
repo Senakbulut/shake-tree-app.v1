@@ -1,20 +1,27 @@
+.AppleCommonP
+    width: 3%
+    position: absolute
+    top:  25%
+
 $applePositionsH: 1,2
-$applePositionsV: 3,4,5,6
+$applePositionsV: 4,5,6
 @each $positionH in $applePositionsH
     .appleImg#{$positionH}
-        width: 4%
+        width: 3%
         position: absolute
-        left: 10 + (8*$positionH) + rem
-        top: 5 + (3*$positionH) + rem
+        left: 10 + (8*$positionH) + %
+        top: 10+ (3*$positionH) + %
 
 @each $positionV in $applePositionsV
-    .appleImg#{$positionV}
-        width: 4%
-        position: absolute
-        left: (3*$positionV) + rem
-        padding-right: (10*$positionV) + rem
-        top: 5 + (3*$positionV) + rem
+    .ImgWrapper#{$positionV}
+        @extend .AppleCommonP
+        left: (3*$positionV) + %
+        margin-left: 3+$positionV + %
+
+.ImgWrapper3
+    @extend .AppleCommonP
+    margin-left: 5%
 
 .containerApple
-    margin: 1%
+    margin: 5%
     
