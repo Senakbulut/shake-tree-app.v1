@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACb,QAAQ,EAAE,QAAQ;EAClB,IAAI,EAAE,GAAG;EACT,GAAG,EAAE,GAAG;CAAG;;AAEf,AAAA,UAAU,CAAC;EACP,KAAK,EAAE,GAAG;CAAG",
     "sources": [
         "Basket.sass"
     ],

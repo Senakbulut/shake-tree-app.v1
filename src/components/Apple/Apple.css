@@ -1,43 +1,83 @@
-.AppleCommonP, .ImgWrapper4, .ImgWrapper5, .ImgWrapper6, .ImgWrapper3 {
+.AppleCommon, .appleImg4, .appleImg5, .appleImg6, .appleImg7, .appleImg3 {
   width: 3%;
   position: absolute;
-  top: 25%;
 }
 
 .appleImg1 {
   width: 3%;
   position: absolute;
   left: 18%;
-  top: 13%;
+  top: 18%;
 }
 
 .appleImg2 {
   width: 3%;
   position: absolute;
   left: 26%;
-  top: 16%;
+  top: 21%;
 }
 
-.ImgWrapper4 {
+.appleImg4 {
+  left: 8%;
+  margin-left: 12%;
+  top: 35%;
+}
+
+.appleImg5 {
+  left: 10%;
+  margin-left: 15%;
+  top: 35%;
+}
+
+.appleImg6 {
   left: 12%;
-  margin-left: 7%;
+  margin-left: 18%;
+  top: 35%;
 }
 
-.ImgWrapper5 {
-  left: 15%;
-  margin-left: 8%;
-}
-
-.ImgWrapper6 {
-  left: 18%;
-  margin-left: 9%;
-}
-
-.ImgWrapper3 {
-  margin-left: 5%;
+.appleImg7 {
+  left: 14%;
+  margin-left: 21%;
+  top: 35%;
 }
 
 .containerApple {
   margin: 5%;
+}
+
+.appleImg3 {
+  top: 29%;
+  left: 13%;
+}
+
+.appleImg5, .appleImg7 {
+  top: 28%;
+}
+
+.shakeAppl {
+  -webkit-animation: falling 3s infinite;
+          animation: falling 3s infinite;
+}
+
+@-webkit-keyframes falling {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(900%);
+            transform: translateY(900%);
+  }
+}
+
+@keyframes falling {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(900%);
+            transform: translateY(900%);
+  }
 }
 /*# sourceMappingURL=Apple.css.map */

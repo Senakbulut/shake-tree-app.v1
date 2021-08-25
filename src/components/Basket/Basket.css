@@ -1,1 +1,10 @@
-/* No CSS *//*# sourceMappingURL=Basket.css.map */
+.containerBasket {
+  position: absolute;
+  left: 50%;
+  top: 68%;
+}
+
+.basketImg {
+  width: 30%;
+}
+/*# sourceMappingURL=Basket.css.map */
