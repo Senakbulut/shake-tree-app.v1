@@ -30,14 +30,31 @@ $applePositionsV: 4,5,6,7
 .appleImg5, .appleImg7
     top: 28%
 
-.shakeAppl
-    animation: falling 3s infinite
+$falling: 1,2,3
 
-@keyframes falling  
+@each $fall in $falling
+    .fallAppl#{$fall}
+        animation: fall $fall + s linear
+        animation-fill-mode: forwards
+    
+
+    
+@keyframes fall  
     0%
         transform: translateY(0%)
+        opacity: 1
+    80%
+        transform: translateY(1000%)
+        opacity: 1
+    90%
+        transform: translateY(970%)
+        opacity: 1
     100%
-        transform: translateY(900%)
+        transform: translateY(1000%)
+        opacity: 0
+   
+        
+  
   
 
 

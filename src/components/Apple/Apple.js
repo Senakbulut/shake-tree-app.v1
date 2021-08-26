@@ -1,52 +1,37 @@
 import React, { useState } from 'react'
 import './Apple.css'
-import ShakeButton from '../ShakeButton/ShakeButton'
 import Tree from '../Tree/Tree'
-function Apple() {
 
-    const [shakeApple, setShakeApple] = useState(false)
+function Apple(props) {
+
+    const [shakeApple1, setShakeApple1] = useState(false)
+    const [shakeApple2, setShakeApple2] = useState(false)
+    const [shakeApple3, setShakeApple3] = useState(false)
 
     const shakeApples = () =>{
-        setShakeApple(true);
-        setTimeout(()=>setShakeApple(false),3000);
+         setShakeApple1(true); setShakeApple2(true); setShakeApple3(true);
+         setTimeout(()=>setShakeApple1(false),4000); 
+         setTimeout(()=>setShakeApple2(false),5000);
+         setTimeout(()=>setShakeApple3(false),6000);
+         setTimeout(()=>{
+             props.visible()}, 4000);
+         
     }
-// render(){  ayrı ayrı delay vermek
-//     const { items } = this.props;
-//     let delay_index = -1;
-//     let delay_jump = 100;
-//     return (
-//         <TransitionGroup>
-//             items.map((item,index) => { 
-//                 delay_index += offer.isNew ? 1 : 0;
-//                 const delay = Math.max(0, delay_index*100);
 
-//                 return (
-//                     <CSSTransition
-//                         key={item.id}
-//                         timeout={1000 + delay}
-//                         classNames="fade">
-//                             <ItemPreview
-//                                 item={item} 
-//                                 style={{transitionDelay: `${delay}ms`}} />             
-//                     </CSSTransition>
-//                 )
-//             })
-//         </TransitionGroup>
-//     )
-// }
     return (
         <div>
-            <Tree fall = {shakeApples}/>
-            <div className="containerApple">
-                    <img src="images/apple.png" alt="" className={`appleImg1 ${shakeApple ? 'shakeAppl' : null }`}/>
-                    <img src="images/apple.png" alt="" className={`appleImg2 ${shakeApple ? 'shakeAppl' : null }`} />
-                    <img src="images/apple.png" alt="" className={`appleImg3 ${shakeApple ? 'shakeAppl' : null }`} />
-                    <img src="images/apple.png" alt="" className={`appleImg4 ${shakeApple ? 'shakeAppl' : null }`} />
-                    <img src="images/apple.png" alt="" className={`appleImg5 ${shakeApple ? 'shakeAppl' : null }`} />
-                    <img src="images/apple.png" alt="" className={`appleImg6 ${shakeApple ? 'shakeAppl' : null }`} />
-                    <img src="images/apple.png" alt="" className={`appleImg7 ${shakeApple ? 'shakeAppl' : null }`} />
-            </div>
+           <Tree fall ={shakeApples}/>
            
+            <div className="containerApple">
+                    <img src="images/apple.png" alt="" className={`appleImg1 `}/>
+                    <img src="images/apple.png" alt="" className={`appleImg2 `} />
+                    <img src="images/apple.png" alt="" className={`appleImg3 ${shakeApple1 ? 'fallAppl1' : null }`} />
+                    <img src="images/apple.png" alt="" className={`appleImg4 ${shakeApple2 ? 'fallAppl2' : null }`} />
+                    <img src="images/apple.png" alt="" className={`appleImg5 `} />
+                    <img src="images/apple.png" alt="" className={`appleImg6 `} />
+                    <img src="images/apple.png" alt="" className={`appleImg7 ${shakeApple3 ? 'fallAppl3' : null }`} />
+            </div>
+       
         </div>
     )
 }

@@ -1,25 +1,18 @@
-import React, {useState} from 'react'
-import Apple from '../Apple/Apple'
+import React, {useState, useEffect} from 'react'
 import ShakeButton from '../ShakeButton/ShakeButton'
 import './Tree.css'
-
 
 function Tree(props) {
 
     const [shaking, setshake] = useState(false)
-   
-    function timeout(delay) {
-       setTimeout(delay)
-    }
     
-    const apple =()=>{
-        console.log("aaaaa")
-    }
-    const shakeTree = () =>{
+
+    const ShakeTree = () =>{
         setshake(true);
-        setTimeout(()=>setshake(false),3000);
-        timeout(3000)
-        apple()
+        setTimeout(()=>setshake(false), 3000);
+        setTimeout(() => {
+            props.fall()}, 3000);
+        
     }
     
     return (
@@ -28,7 +21,7 @@ function Tree(props) {
                     <img src="images/tree.png" alt="" className={`treeImg ${shaking ? 'shake' : null }`}  />
             </div>
            
-             <ShakeButton shake = {shakeTree} /> 
+              <ShakeButton shake ={ShakeTree}/>
         </div>
     )
 }

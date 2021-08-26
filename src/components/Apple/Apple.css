@@ -54,30 +54,70 @@
   top: 28%;
 }
 
-.shakeAppl {
-  -webkit-animation: falling 3s infinite;
-          animation: falling 3s infinite;
+.fallAppl1 {
+  -webkit-animation: fall 1s linear;
+          animation: fall 1s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes falling {
+.fallAppl2 {
+  -webkit-animation: fall 2s linear;
+          animation: fall 2s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.fallAppl3 {
+  -webkit-animation: fall 3s linear;
+          animation: fall 3s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fall {
   0% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateY(1000%);
+            transform: translateY(1000%);
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: translateY(970%);
+            transform: translateY(970%);
+    opacity: 1;
   }
   100% {
-    -webkit-transform: translateY(900%);
-            transform: translateY(900%);
+    -webkit-transform: translateY(1000%);
+            transform: translateY(1000%);
+    opacity: 0;
   }
 }
 
-@keyframes falling {
+@keyframes fall {
   0% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateY(1000%);
+            transform: translateY(1000%);
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: translateY(970%);
+            transform: translateY(970%);
+    opacity: 1;
   }
   100% {
-    -webkit-transform: translateY(900%);
-            transform: translateY(900%);
+    -webkit-transform: translateY(1000%);
+            transform: translateY(1000%);
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=Apple.css.map */
