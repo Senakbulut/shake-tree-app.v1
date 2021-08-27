@@ -7,7 +7,7 @@ function Basket() {
     const visibleApple = ()=>{
        
         setBasketApple(true);
-        setTimeout(()=>setBasketApple(false), 8000);
+        setTimeout(()=>setBasketApple(false), 6000);
     }
     return (
         <div>
